@@ -6,26 +6,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="main">
-        <h1>🌵cookie clicker clone🤠</h1>
-            <p id="counter">DOLLARS STOLEN: <span id="currency">0</span>💲<p/>
-            <button id="theClicker" onclick="currencyClick(1)"></button>
-        </div>
-    <br>
-    <br>
-    <p id="tools">Tools</p>
-        <div id="upgradeRow">
+<div id="main">
+    <h1>🤠MOUNTAIN BANDIT CLICKER🤠</h1>
+    <p id="counter">DOLLARS STOLEN: <span id="currency">0</span>💲
+    <p/>
+    <button id="theClicker">Rob some strangers!</button>
+</div>
+<h2 id="tools">Upgrades</h2>
+<div id="upgradeRow">
+    <div class="upgradeItem">
+        <h3>Weapons</h3>
+        <button class="upgradeButtonALT" id="UpgradeClickPower">Buy Weapons</button>
+        <p>Steals <span id="weaponPowerMultiple">1</span> dollars per click</p>
+        <p>Weapon amount:<span id="weaponLevel"> 1</span></p>
+        <p>Weapon price:<span id="weaponPrice"> 15💲</span></p>
+    </div>
+    <div class="upgradeItem">
+        <h3>Bandits</h3>
+        <button class="upgradeButtonALT" id="buyUpgrade1">Hire Bandit</button>
+        <p>Stealing <span id="upgrade1Multiple">0</span> dollars per sec</p>
+        <p>Bandits hired: <span id="upgrade1amount">0</span></p>
+        <p>Bandit price: <span id="upgrade1cost">10💲</span></p>
+    </div>
+    <div class="upgradeItem">
+        <h3>Horses</h3>
+        <button class="upgradeButtonALT" id="buyUpgrade2">Buy Horses</button>
+        <p>Moving <span id="upgrade2Multiple">0</span> dollars per sec</p>
+        <p>Horses bought: <span id="upgrade2amount">0</span></p>
+        <p>Horse price: <span id="upgrade2cost">30💲</span></p>
+    </div>
+    <div class="upgradeItem">
+        <h3>Dynamite</h3>
+        <button class="upgradeButton" id="buyUpgrade3">Buy Dynamite</button>
+        <p>Acquiring <span id="upgrade3Multiple">0</span> dollars per sec</p>
+        <p>Dynamite bought: <span id="upgrade3amount">0</span></p>
+        <p>Dynamite price: <span id="upgrade3cost">100💲</span></p>
+    </div>
+</div>
 
-            <div id="upgradeItem">
-                <button onclick="buyUpgrade1()">Hire Bandit</button>
-                <button id="upgrade1x10" onclick="buyUpgrade1x10()">Hire Bandits x 10</button>
-                <p>Bandits hired: <span id="upgrade1amount">0</span></p>
-                <p>Bandit price: <span id="upgrade1cost">10💲</span></p>
-                <p>Bandit price x 10: <span id="upgrade1costx10">110💲</span></p>
-            </div>
-
-        </div>
-
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
