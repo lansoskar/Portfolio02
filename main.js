@@ -78,7 +78,7 @@ buyUpgrade1.addEventListener('click', function () {
     if (currency >= upgrade1PriceAmount) {
         currency = currency - upgrade1PriceAmount
         updateCurrencyCount()
-        upgrade1Power += 1 + Math.floor(upgrade1Power * 1.05);
+        upgrade1Power += 1 + Math.floor(upgrade1Power * 1.005);
         upgrade1LevelNumber += 1
         upgrade1PriceAmount = Math.floor(upgrade1PriceAmount * 1.33)
         updateUpgrade1()
@@ -121,7 +121,7 @@ buyUpgrade2.addEventListener('click', function () {
     if (currency >= upgrade2PriceAmount) {
         currency = currency - upgrade2PriceAmount
         updateCurrencyCount()
-        upgrade2Power += 5 + Math.floor(upgrade2Power * 1.05);
+        upgrade2Power += 5 + Math.floor(upgrade2Power * 1.005);
         upgrade2LevelNumber += 1
         upgrade2PriceAmount = Math.floor(upgrade2PriceAmount * 1.60)
         updateUpgrade2()
