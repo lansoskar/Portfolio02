@@ -53,7 +53,7 @@ UpgradeClickPower.addEventListener("click", function () {
         updateCurrencyCount()
         clickIncreasePriceAmount = Math.floor(clickIncreasePriceAmount * 1.25);
         weaponLevelNumber += 1;
-        clickPower += 1 + Math.floor(clickPower * 1.05);
+        clickPower += 1 + Math.floor(clickPower * 0.05);
         updateWeaponLevel()
     } else {
         alert('Not enough dollars, go rob some more!')
@@ -78,7 +78,7 @@ buyUpgrade1.addEventListener('click', function () {
     if (currency >= upgrade1PriceAmount) {
         currency = currency - upgrade1PriceAmount
         updateCurrencyCount()
-        upgrade1Power += 1 + Math.floor(upgrade1Power * 1.005);
+        upgrade1Power += 1 + Math.floor(upgrade1Power * 0.05);
         upgrade1LevelNumber += 1
         upgrade1PriceAmount = Math.floor(upgrade1PriceAmount * 1.33)
         updateUpgrade1()
@@ -121,7 +121,7 @@ buyUpgrade2.addEventListener('click', function () {
     if (currency >= upgrade2PriceAmount) {
         currency = currency - upgrade2PriceAmount
         updateCurrencyCount()
-        upgrade2Power += 5 + Math.floor(upgrade2Power * 1.005);
+        upgrade2Power += 5 + Math.floor(upgrade2Power * 0.05);
         upgrade2LevelNumber += 1
         upgrade2PriceAmount = Math.floor(upgrade2PriceAmount * 1.60)
         updateUpgrade2()
@@ -164,9 +164,9 @@ buyUpgrade3.addEventListener('click', function () {
     if (currency >= upgrade3PriceAmount) {
         currency = currency - upgrade3PriceAmount
         updateCurrencyCount()
-        upgrade3Power += 10 + Math.floor(upgrade3Power * 1.05)
+        upgrade3Power += 10 + Math.floor(upgrade3Power * 1.005)
         upgrade3LevelNumber += 1
-        upgrade3PriceAmount = Math.floor(upgrade3PriceAmount * 2.50)
+        upgrade3PriceAmount = Math.floor(upgrade3PriceAmount * 4)
         updateUpgrade3()
         upgrade3AutoClick = true
         upgrade3AutoClicker()
